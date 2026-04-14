@@ -1,0 +1,18 @@
+# Build artifacts
+.build/
+.build-xcframework/
+bin/
+obj/
+DerivedData/
+
+# IDE
+.vs/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+.idea/
+
+# OS
+.DS_Store
+
+# NuGet
+*.nupkg

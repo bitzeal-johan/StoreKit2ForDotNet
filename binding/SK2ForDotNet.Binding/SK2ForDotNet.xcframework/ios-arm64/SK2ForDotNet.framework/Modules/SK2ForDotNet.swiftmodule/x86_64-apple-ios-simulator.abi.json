@@ -1,0 +1,1755 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "SK2ForDotNet",
+    "printedName": "SK2ForDotNet",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SK2ForDotNet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SK2ProductInfo",
+        "printedName": "SK2ProductInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "productId",
+            "printedName": "productId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2ProductInfo(py)productId",
+            "mangledName": "$s12SK2ForDotNet0A11ProductInfoC9productIdSSvp",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2ProductInfo(im)productId",
+                "mangledName": "$s12SK2ForDotNet0A11ProductInfoC9productIdSSvg",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "displayName",
+            "printedName": "displayName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2ProductInfo(py)displayName",
+            "mangledName": "$s12SK2ForDotNet0A11ProductInfoC11displayNameSSvp",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2ProductInfo(im)displayName",
+                "mangledName": "$s12SK2ForDotNet0A11ProductInfoC11displayNameSSvg",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "displayPrice",
+            "printedName": "displayPrice",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2ProductInfo(py)displayPrice",
+            "mangledName": "$s12SK2ForDotNet0A11ProductInfoC12displayPriceSSvp",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2ProductInfo(im)displayPrice",
+                "mangledName": "$s12SK2ForDotNet0A11ProductInfoC12displayPriceSSvg",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "price",
+            "printedName": "price",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSDecimalNumber",
+                "printedName": "Foundation.NSDecimalNumber",
+                "usr": "c:objc(cs)NSDecimalNumber"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2ProductInfo(py)price",
+            "mangledName": "$s12SK2ForDotNet0A11ProductInfoC5priceSo15NSDecimalNumberCvp",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDecimalNumber",
+                    "printedName": "Foundation.NSDecimalNumber",
+                    "usr": "c:objc(cs)NSDecimalNumber"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2ProductInfo(im)price",
+                "mangledName": "$s12SK2ForDotNet0A11ProductInfoC5priceSo15NSDecimalNumberCvg",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "productType",
+            "printedName": "productType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2ProductInfo(py)productType",
+            "mangledName": "$s12SK2ForDotNet0A11ProductInfoC11productTypeSSvp",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2ProductInfo(im)productType",
+                "mangledName": "$s12SK2ForDotNet0A11ProductInfoC11productTypeSSvg",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SK2ProductInfo",
+                "printedName": "SK2ForDotNet.SK2ProductInfo",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2ProductInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2ProductInfo(im)init",
+            "mangledName": "$s12SK2ForDotNet0A11ProductInfoCACycfc",
+            "moduleName": "SK2ForDotNet",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SK2ForDotNet@objc(cs)SK2ProductInfo",
+        "mangledName": "$s12SK2ForDotNet0A11ProductInfoC",
+        "moduleName": "SK2ForDotNet",
+        "objc_name": "SK2ProductInfo",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SK2ForDotNet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SK2PurchaseResultType",
+        "printedName": "SK2PurchaseResultType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SK2ForDotNet.SK2PurchaseResultType.Type) -> SK2ForDotNet.SK2PurchaseResultType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SK2PurchaseResultType",
+                    "printedName": "SK2ForDotNet.SK2PurchaseResultType",
+                    "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SK2ForDotNet.SK2PurchaseResultType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SK2PurchaseResultType",
+                        "printedName": "SK2ForDotNet.SK2PurchaseResultType",
+                        "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType@SK2PurchaseResultTypeSuccess",
+            "mangledName": "$s12SK2ForDotNet0A18PurchaseResultTypeO7successyA2CmF",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "userCancelled",
+            "printedName": "userCancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SK2ForDotNet.SK2PurchaseResultType.Type) -> SK2ForDotNet.SK2PurchaseResultType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SK2PurchaseResultType",
+                    "printedName": "SK2ForDotNet.SK2PurchaseResultType",
+                    "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SK2ForDotNet.SK2PurchaseResultType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SK2PurchaseResultType",
+                        "printedName": "SK2ForDotNet.SK2PurchaseResultType",
+                        "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType@SK2PurchaseResultTypeUserCancelled",
+            "mangledName": "$s12SK2ForDotNet0A18PurchaseResultTypeO13userCancelledyA2CmF",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "pending",
+            "printedName": "pending",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SK2ForDotNet.SK2PurchaseResultType.Type) -> SK2ForDotNet.SK2PurchaseResultType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SK2PurchaseResultType",
+                    "printedName": "SK2ForDotNet.SK2PurchaseResultType",
+                    "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SK2ForDotNet.SK2PurchaseResultType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SK2PurchaseResultType",
+                        "printedName": "SK2ForDotNet.SK2PurchaseResultType",
+                        "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType@SK2PurchaseResultTypePending",
+            "mangledName": "$s12SK2ForDotNet0A18PurchaseResultTypeO7pendingyA2CmF",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SK2ForDotNet.SK2PurchaseResultType.Type) -> SK2ForDotNet.SK2PurchaseResultType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SK2PurchaseResultType",
+                    "printedName": "SK2ForDotNet.SK2PurchaseResultType",
+                    "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SK2ForDotNet.SK2PurchaseResultType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SK2PurchaseResultType",
+                        "printedName": "SK2ForDotNet.SK2PurchaseResultType",
+                        "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType@SK2PurchaseResultTypeFailed",
+            "mangledName": "$s12SK2ForDotNet0A18PurchaseResultTypeO6failedyA2CmF",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SK2ForDotNet.SK2PurchaseResultType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SK2PurchaseResultType",
+                    "printedName": "SK2ForDotNet.SK2PurchaseResultType",
+                    "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12SK2ForDotNet0A18PurchaseResultTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s12SK2ForDotNet0A18PurchaseResultTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "SK2ForDotNet",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12SK2ForDotNet0A18PurchaseResultTypeO8rawValueSivp",
+            "mangledName": "$s12SK2ForDotNet0A18PurchaseResultTypeO8rawValueSivp",
+            "moduleName": "SK2ForDotNet",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12SK2ForDotNet0A18PurchaseResultTypeO8rawValueSivg",
+                "mangledName": "$s12SK2ForDotNet0A18PurchaseResultTypeO8rawValueSivg",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType",
+        "mangledName": "$s12SK2ForDotNet0A18PurchaseResultTypeO",
+        "moduleName": "SK2ForDotNet",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SK2ForDotNet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SK2TransactionInfo",
+        "printedName": "SK2TransactionInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "productId",
+            "printedName": "productId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(py)productId",
+            "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC9productIdSSvp",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(im)productId",
+                "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC9productIdSSvg",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "transactionId",
+            "printedName": "transactionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(py)transactionId",
+            "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC13transactionIds5Int64Vvp",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(im)transactionId",
+                "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC13transactionIds5Int64Vvg",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "originalTransactionId",
+            "printedName": "originalTransactionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(py)originalTransactionId",
+            "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC08originalE2Ids5Int64Vvp",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(im)originalTransactionId",
+                "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC08originalE2Ids5Int64Vvg",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "purchaseDate",
+            "printedName": "purchaseDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(py)purchaseDate",
+            "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC12purchaseDate10Foundation0H0Vvp",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(im)purchaseDate",
+                "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC12purchaseDate10Foundation0H0Vvg",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "productType",
+            "printedName": "productType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(py)productType",
+            "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC11productTypeSSvp",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(im)productType",
+                "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC11productTypeSSvg",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expirationDate",
+            "printedName": "expirationDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(py)expirationDate",
+            "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC14expirationDate10Foundation0H0VSgvp",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(im)expirationDate",
+                "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC14expirationDate10Foundation0H0VSgvg",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isRevoked",
+            "printedName": "isRevoked",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(py)isRevoked",
+            "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC9isRevokedSbvp",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(im)isRevoked",
+                "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC9isRevokedSbvg",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SK2TransactionInfo",
+                "printedName": "SK2ForDotNet.SK2TransactionInfo",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo(im)init",
+            "mangledName": "$s12SK2ForDotNet0A15TransactionInfoCACycfc",
+            "moduleName": "SK2ForDotNet",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo",
+        "mangledName": "$s12SK2ForDotNet0A15TransactionInfoC",
+        "moduleName": "SK2ForDotNet",
+        "objc_name": "SK2TransactionInfo",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SK2ForDotNet"
+      },
+      {
+        "kind": "Import",
+        "name": "StoreKit",
+        "printedName": "StoreKit",
+        "declKind": "Import",
+        "moduleName": "SK2ForDotNet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SK2Wrapper",
+        "printedName": "SK2Wrapper",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any SK2ForDotNet.SK2WrapperDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2Wrapper(py)delegate",
+            "mangledName": "$s12SK2ForDotNet0A7WrapperC8delegateAA0aE8Delegate_pSgvp",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any SK2ForDotNet.SK2WrapperDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SK2WrapperDelegate",
+                        "printedName": "any SK2ForDotNet.SK2WrapperDelegate",
+                        "usr": "c:@M@SK2ForDotNet@objc(pl)SK2WrapperDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2Wrapper(im)delegate",
+                "mangledName": "$s12SK2ForDotNet0A7WrapperC8delegateAA0aE8Delegate_pSgvg",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any SK2ForDotNet.SK2WrapperDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SK2WrapperDelegate",
+                        "printedName": "any SK2ForDotNet.SK2WrapperDelegate",
+                        "usr": "c:@M@SK2ForDotNet@objc(pl)SK2WrapperDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2Wrapper(im)setDelegate:",
+                "mangledName": "$s12SK2ForDotNet0A7WrapperC8delegateAA0aE8Delegate_pSgvs",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12SK2ForDotNet0A7WrapperC8delegateAA0aE8Delegate_pSgvM",
+                "mangledName": "$s12SK2ForDotNet0A7WrapperC8delegateAA0aE8Delegate_pSgvM",
+                "moduleName": "SK2ForDotNet",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SK2Wrapper",
+                "printedName": "SK2ForDotNet.SK2Wrapper",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2Wrapper"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2Wrapper(im)init",
+            "mangledName": "$s12SK2ForDotNet0A7WrapperCACycfc",
+            "moduleName": "SK2ForDotNet",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2Wrapper(im)initialize",
+            "mangledName": "$s12SK2ForDotNet0A7WrapperC10initializeyyF",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchProducts",
+            "printedName": "fetchProducts(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([SK2ForDotNet.SK2ProductInfo]?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([SK2ForDotNet.SK2ProductInfo]?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[SK2ForDotNet.SK2ProductInfo]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[SK2ForDotNet.SK2ProductInfo]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "SK2ProductInfo",
+                                "printedName": "SK2ForDotNet.SK2ProductInfo",
+                                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2ProductInfo"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2Wrapper(im)fetchProducts:completion:",
+            "mangledName": "$s12SK2ForDotNet0A7WrapperC13fetchProducts_10completionySaySSG_ySayAA0A11ProductInfoCGSg_So7NSErrorCSgtctF",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "purchase",
+            "printedName": "purchase(productId:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SK2ForDotNet.SK2PurchaseResultType, SK2ForDotNet.SK2TransactionInfo?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(SK2ForDotNet.SK2PurchaseResultType, SK2ForDotNet.SK2TransactionInfo?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SK2PurchaseResultType",
+                        "printedName": "SK2ForDotNet.SK2PurchaseResultType",
+                        "usr": "c:@M@SK2ForDotNet@E@SK2PurchaseResultType"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "SK2ForDotNet.SK2TransactionInfo?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SK2TransactionInfo",
+                            "printedName": "SK2ForDotNet.SK2TransactionInfo",
+                            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2Wrapper(im)purchaseWithProductId:completion:",
+            "mangledName": "$s12SK2ForDotNet0A7WrapperC8purchase9productId10completionySS_yAA0A18PurchaseResultTypeO_AA0A15TransactionInfoCSgSo7NSErrorCSgtctF",
+            "moduleName": "SK2ForDotNet",
+            "objc_name": "purchaseWithProductId:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SK2ForDotNet@objc(cs)SK2Wrapper",
+        "mangledName": "$s12SK2ForDotNet0A7WrapperC",
+        "moduleName": "SK2ForDotNet",
+        "objc_name": "SK2Wrapper",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SK2ForDotNet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SK2WrapperDelegate",
+        "printedName": "SK2WrapperDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sk2Wrapper",
+            "printedName": "sk2Wrapper(_:didUpdateEntitlements:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SK2Wrapper",
+                "printedName": "SK2ForDotNet.SK2Wrapper",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2Wrapper"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[SK2ForDotNet.SK2TransactionInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SK2TransactionInfo",
+                    "printedName": "SK2ForDotNet.SK2TransactionInfo",
+                    "usr": "c:@M@SK2ForDotNet@objc(cs)SK2TransactionInfo"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SK2ForDotNet@objc(pl)SK2WrapperDelegate(im)sk2Wrapper:didUpdateEntitlements:",
+            "mangledName": "$s12SK2ForDotNet0A15WrapperDelegateP03sk2E0_21didUpdateEntitlementsyAA0aE0C_SayAA0A15TransactionInfoCGtF",
+            "moduleName": "SK2ForDotNet",
+            "genericSig": "<τ_0_0 where τ_0_0 : SK2ForDotNet.SK2WrapperDelegate>",
+            "sugared_genericSig": "<Self where Self : SK2ForDotNet.SK2WrapperDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sk2Wrapper",
+            "printedName": "sk2Wrapper(_:didEncounterError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SK2Wrapper",
+                "printedName": "SK2ForDotNet.SK2Wrapper",
+                "usr": "c:@M@SK2ForDotNet@objc(cs)SK2Wrapper"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSError",
+                "printedName": "Foundation.NSError",
+                "usr": "c:objc(cs)NSError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SK2ForDotNet@objc(pl)SK2WrapperDelegate(im)sk2Wrapper:didEncounterError:",
+            "mangledName": "$s12SK2ForDotNet0A15WrapperDelegateP03sk2E0_17didEncounterErroryAA0aE0C_So7NSErrorCtF",
+            "moduleName": "SK2ForDotNet",
+            "genericSig": "<τ_0_0 where τ_0_0 : SK2ForDotNet.SK2WrapperDelegate>",
+            "sugared_genericSig": "<Self where Self : SK2ForDotNet.SK2WrapperDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@SK2ForDotNet@objc(pl)SK2WrapperDelegate",
+        "mangledName": "$s12SK2ForDotNet0A15WrapperDelegateP",
+        "moduleName": "SK2ForDotNet",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "objc_name": "SK2WrapperDelegate",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/johanfranzen\/repo\/StoreKit2ForDotNet\/swift\/Sources\/SK2ForDotNet\/SK2PurchaseResultType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/johanfranzen\/repo\/StoreKit2ForDotNet\/swift\/Sources\/SK2ForDotNet\/SK2PurchaseResultType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 112,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/johanfranzen\/repo\/StoreKit2ForDotNet\/swift\/Sources\/SK2ForDotNet\/SK2PurchaseResultType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 133,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/johanfranzen\/repo\/StoreKit2ForDotNet\/swift\/Sources\/SK2ForDotNet\/SK2PurchaseResultType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 153,
+      "length": 1,
+      "value": "3"
+    }
+  ]
+}

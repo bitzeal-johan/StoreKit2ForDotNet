@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-ios</TargetFramework>
+    <Nullable>enable</Nullable>
+    <IsBindingProject>true</IsBindingProject>
+    <NoBindingEmbedding>false</NoBindingEmbedding>
+    <SupportedOSPlatformVersion>15.0</SupportedOSPlatformVersion>
+    <RootNamespace>SK2ForDotNet</RootNamespace>
+    <AssemblyName>SK2ForDotNet</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+    <!-- NuGet packaging -->
+    <PackageId>SK2ForDotNet</PackageId>
+    <Version>1.0.0</Version>
+    <Description>StoreKit 2 wrapper for .NET iOS projects. Bridges Swift-only StoreKit 2 APIs to .NET via @objc-compatible interfaces.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <NativeReference Include="SK2ForDotNet.xcframework">
+      <Kind>Framework</Kind>
+      <SmartLink>false</SmartLink>
+      <ForceLoad>true</ForceLoad>
+      <Frameworks>StoreKit Foundation</Frameworks>
+    </NativeReference>
+  </ItemGroup>
+</Project>

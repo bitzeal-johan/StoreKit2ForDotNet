@@ -1,0 +1,60 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name SK2ForDotNet -package-name swift
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import Foundation
+import StoreKit
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @objc(SK2ProductInfo) public class SK2ProductInfo : ObjectiveC.NSObject {
+  @objc final public let productId: Swift.String
+  @objc final public let displayName: Swift.String
+  @objc final public let displayPrice: Swift.String
+  @objc final public let price: Foundation.NSDecimalNumber
+  @objc final public let productType: Swift.String
+  @objc deinit
+}
+@objc public enum SK2PurchaseResultType : Swift.Int {
+  case success = 0
+  case userCancelled = 1
+  case pending = 2
+  case failed = 3
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc(SK2TransactionInfo) public class SK2TransactionInfo : ObjectiveC.NSObject {
+  @objc final public let productId: Swift.String
+  @objc final public let transactionId: Swift.Int64
+  @objc final public let originalTransactionId: Swift.Int64
+  @objc final public let purchaseDate: Foundation.Date
+  @objc final public let productType: Swift.String
+  @objc final public let expirationDate: Foundation.Date?
+  @objc final public let isRevoked: Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(SK2Wrapper) public class SK2Wrapper : ObjectiveC.NSObject {
+  @objc weak public var delegate: (any SK2ForDotNet.SK2WrapperDelegate)?
+  @objc override dynamic public init()
+  @objc deinit
+  @objc public func initialize()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func fetchProducts(_ productIds: [Swift.String], completion: @escaping ([SK2ForDotNet.SK2ProductInfo]?, Foundation.NSError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func purchase(productId: Swift.String, completion: @escaping (SK2ForDotNet.SK2PurchaseResultType, SK2ForDotNet.SK2TransactionInfo?, Foundation.NSError?) -> Swift.Void)
+  #endif
+}
+@objc(SK2WrapperDelegate) public protocol SK2WrapperDelegate {
+  @objc func sk2Wrapper(_ wrapper: SK2ForDotNet.SK2Wrapper, didUpdateEntitlements transactions: [SK2ForDotNet.SK2TransactionInfo])
+  @objc optional func sk2Wrapper(_ wrapper: SK2ForDotNet.SK2Wrapper, didEncounterError error: Foundation.NSError)
+}
+extension SK2ForDotNet.SK2PurchaseResultType : Swift.Equatable {}
+extension SK2ForDotNet.SK2PurchaseResultType : Swift.Hashable {}
+extension SK2ForDotNet.SK2PurchaseResultType : Swift.RawRepresentable {}
