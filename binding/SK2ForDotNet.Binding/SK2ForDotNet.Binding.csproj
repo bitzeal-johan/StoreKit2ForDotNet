@@ -12,8 +12,12 @@
     <!-- NuGet packaging -->
     <PackageId>SK2ForDotNet</PackageId>
     <Version>1.0.0</Version>
-    <Description>StoreKit 2 wrapper for .NET iOS projects. Bridges Swift-only StoreKit 2 APIs to .NET via @objc-compatible interfaces.</Description>
+    <Authors>Johan Franzen</Authors>
+    <Description>StoreKit 2 wrapper for .NET iOS projects. Bridges Apple's Swift-only StoreKit 2 APIs to .NET via @objc-compatible interfaces, enabling in-app purchases on iOS 15+ with .NET 10.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>ios;storekit;storekit2;in-app-purchase;iap;dotnet-ios;xamarin;maui;swift;xcframework</PackageTags>
     <IsPackable>true</IsPackable>
   </PropertyGroup>
 
