@@ -141,6 +141,18 @@ public class MyBillingService : SK2WrapperDelegate
 }
 ```
 
+### 6. Read the app's original download (early-user checks)
+
+`GetAppTransactionAsync` reads Apple's `AppTransaction.shared` (iOS 16+). `OriginalAppVersion` is the build number of the user's first download. It follows the Apple ID.
+
+```csharp
+var appTransaction = await _wrapper.GetAppTransactionAsync();
+if (appTransaction.IsVerified)
+    Console.WriteLine($"First download: build {appTransaction.OriginalAppVersion} on {appTransaction.OriginalPurchaseDate}");
+```
+
+`IsVerified` is `false` when Apple's signature check fails; the values are then not trustworthy. The call throws `NSErrorException` when StoreKit fails (for example offline) or the device runs iOS 15. On a simulator without an App Store account it throws `StoreKitError.unknown`.
+
 ## API Reference
 
 ### SK2Wrapper
@@ -150,6 +162,8 @@ public class MyBillingService : SK2WrapperDelegate
 | `Initialize()` | Loads current entitlements and starts observing `Transaction.updates`. Results arrive via `DidUpdateEntitlements`. |
 | `Purchase(productId, completion)` | Fetches the product and launches the App Store payment sheet. Completion returns `SK2PurchaseResultType`. |
 | `FetchProducts(productIds, completion)` | Fetches product metadata (name, price, type) from the App Store. |
+| `FetchAppTransaction(completion)` | Reads `AppTransaction.shared`. Completion returns `SK2AppTransactionInfo` or an error. |
+| `GetAppTransactionAsync()` | Extension. Same as `FetchAppTransaction`, returns `Task<AppTransactionInfo>`. |
 
 ### SK2WrapperDelegate
 
@@ -169,6 +183,14 @@ public class MyBillingService : SK2WrapperDelegate
 | `ProductType` | `string` | `"nonConsumable"`, `"consumable"`, `"autoRenewable"`, `"nonRenewable"` |
 | `ExpirationDate` | `NSDate?` | Subscription expiration (nil for non-subscriptions) |
 | `IsRevoked` | `bool` | Whether the transaction has been revoked |
+
+### SK2AppTransactionInfo / AppTransactionInfo
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `OriginalAppVersion` | `string` | Build number of the first download |
+| `OriginalPurchaseDate` | `NSDate` / `DateTimeOffset` | When the app was first downloaded |
+| `IsVerified` | `bool` | Whether Apple's signature check passed |
 
 ### SK2ProductInfo
 

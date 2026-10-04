@@ -1,13 +1,19 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name SK2ForDotNet -package-name swift
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -module-name SK2ForDotNet -package-name swift
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import Foundation
 import StoreKit
 import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @objc(SK2AppTransactionInfo) public class SK2AppTransactionInfo : ObjectiveC.NSObject {
+  @objc final public let originalAppVersion: Swift.String
+  @objc final public let originalPurchaseDate: Foundation.Date
+  @objc final public let isVerified: Swift.Bool
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc(SK2ProductInfo) public class SK2ProductInfo : ObjectiveC.NSObject {
   @objc final public let productId: Swift.String
   @objc final public let displayName: Swift.String
@@ -21,9 +27,7 @@ import _SwiftConcurrencyShims
   case userCancelled = 1
   case pending = 2
   case failed = 3
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -44,12 +48,9 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
   @objc public func initialize()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func fetchProducts(_ productIds: [Swift.String], completion: @escaping ([SK2ForDotNet.SK2ProductInfo]?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func purchase(productId: Swift.String, completion: @escaping (SK2ForDotNet.SK2PurchaseResultType, SK2ForDotNet.SK2TransactionInfo?, Foundation.NSError?) -> Swift.Void)
-  #endif
+  @objc public func fetchAppTransaction(completion: @escaping (SK2ForDotNet.SK2AppTransactionInfo?, Foundation.NSError?) -> Swift.Void)
 }
 @objc(SK2WrapperDelegate) public protocol SK2WrapperDelegate {
   @objc func sk2Wrapper(_ wrapper: SK2ForDotNet.SK2Wrapper, didUpdateEntitlements transactions: [SK2ForDotNet.SK2TransactionInfo])

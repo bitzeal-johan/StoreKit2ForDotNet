@@ -7,6 +7,7 @@ namespace SK2ForDotNet;
 
 delegate void SK2FetchProductsCompletion(SK2ProductInfo[]? products, NSError? error);
 delegate void SK2PurchaseCompletion(SK2PurchaseResultType result, SK2TransactionInfo? transaction, NSError? error);
+delegate void SK2AppTransactionCompletion(SK2AppTransactionInfo? appTransaction, NSError? error);
 
 // @protocol SK2WrapperDelegate
 [Protocol, Model]
@@ -69,6 +70,21 @@ interface SK2ProductInfo
     string ProductType { get; }
 }
 
+// @interface SK2AppTransactionInfo : NSObject
+[BaseType(typeof(NSObject))]
+[DisableDefaultCtor]
+interface SK2AppTransactionInfo
+{
+    [Export("originalAppVersion")]
+    string OriginalAppVersion { get; }
+
+    [Export("originalPurchaseDate", ArgumentSemantic.Copy)]
+    NSDate OriginalPurchaseDate { get; }
+
+    [Export("isVerified")]
+    bool IsVerified { get; }
+}
+
 // @interface SK2Wrapper : NSObject
 [BaseType(typeof(NSObject))]
 interface SK2Wrapper
@@ -84,4 +100,7 @@ interface SK2Wrapper
 
     [Export("purchaseWithProductId:completion:")]
     void Purchase(string productId, SK2PurchaseCompletion completion);
+
+    [Export("fetchAppTransactionWithCompletion:")]
+    void FetchAppTransaction(SK2AppTransactionCompletion completion);
 }

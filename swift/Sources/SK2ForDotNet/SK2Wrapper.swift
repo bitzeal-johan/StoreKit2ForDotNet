@@ -92,6 +92,40 @@ import StoreKit
         }
     }
 
+    @objc public func fetchAppTransaction(
+        completion: @escaping (SK2AppTransactionInfo?, NSError?) -> Void
+    ) {
+        guard #available(iOS 16.0, macOS 13.0, *) else {
+            completion(nil, NSError(
+                domain: "SK2ForDotNet",
+                code: 2,
+                userInfo: [NSLocalizedDescriptionKey: "AppTransaction requires iOS 16"]
+            ))
+            return
+        }
+        Task {
+            do {
+                switch try await AppTransaction.shared {
+                case .verified(let appTransaction):
+                    completion(Self.appTransactionInfo(from: appTransaction, isVerified: true), nil)
+                case .unverified(let appTransaction, _):
+                    completion(Self.appTransactionInfo(from: appTransaction, isVerified: false), nil)
+                }
+            } catch {
+                completion(nil, error as NSError)
+            }
+        }
+    }
+
+    @available(iOS 16.0, macOS 13.0, *)
+    private static func appTransactionInfo(from tx: AppTransaction, isVerified: Bool) -> SK2AppTransactionInfo {
+        return SK2AppTransactionInfo(
+            originalAppVersion: tx.originalAppVersion,
+            originalPurchaseDate: tx.originalPurchaseDate,
+            isVerified: isVerified
+        )
+    }
+
     private func refreshEntitlements() async {
         var entries: [SK2TransactionInfo] = []
         for await result in Transaction.currentEntitlements {
