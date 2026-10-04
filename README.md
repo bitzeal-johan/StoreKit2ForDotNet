@@ -151,7 +151,7 @@ if (appTransaction.IsVerified)
     Console.WriteLine($"First download: build {appTransaction.OriginalAppVersion} on {appTransaction.OriginalPurchaseDate}");
 ```
 
-`IsVerified` is `false` when Apple's signature check fails; the values are then not trustworthy. The call throws `NSErrorException` when StoreKit fails (for example offline) or the device runs iOS 15. In a development build the value is a sandbox value (build `"1.0"`).
+`IsVerified` is `false` when Apple's signature check fails; the values are then not trustworthy. The call throws `NSErrorException` when StoreKit fails (for example offline) or the device runs iOS 15. On a simulator without an App Store account it throws `StoreKitError.unknown`.
 
 ## API Reference
 
