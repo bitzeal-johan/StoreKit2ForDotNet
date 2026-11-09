@@ -159,7 +159,8 @@ if (appTransaction.IsVerified)
 
 | Method | Description |
 |--------|-------------|
-| `Initialize()` | Loads current entitlements and starts observing `Transaction.updates`. Results arrive via `DidUpdateEntitlements`. |
+| `Initialize()` | Loads current entitlements and starts observing `Transaction.updates` (once; a second call only reloads). Each verified update is finished after the entitlements are reloaded. Results arrive via `DidUpdateEntitlements`. |
+| `RefreshEntitlements()` | Reloads current entitlements (e.g. for a Restore button). Results arrive via `DidUpdateEntitlements`. |
 | `Purchase(productId, completion)` | Fetches the product and launches the App Store payment sheet. Completion returns `SK2PurchaseResultType`. |
 | `FetchProducts(productIds, completion)` | Fetches product metadata (name, price, type) from the App Store. |
 | `FetchAppTransaction(completion)` | Reads `AppTransaction.shared`. Completion returns `SK2AppTransactionInfo` or an error. |
