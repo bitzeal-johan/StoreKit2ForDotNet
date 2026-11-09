@@ -1610,6 +1610,28 @@
             "moduleName": "SK2ForDotNet",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refreshEntitlements",
+            "printedName": "refreshEntitlements()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SK2ForDotNet@objc(cs)SK2Wrapper(im)refreshEntitlements",
+            "mangledName": "$s12SK2ForDotNet0A7WrapperC19refreshEntitlementsyyF",
+            "moduleName": "SK2ForDotNet",
+            "declAttributes": [
+              "AccessControl",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -2062,28 +2084,28 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/johanfranzen\/repo\/StoreKit2ForDotNet\/swift\/Sources\/SK2ForDotNet\/SK2PurchaseResultType.swift",
+      "filePath": "\/Users\/johanfranzen\/repo\/StoreKit2ForDotNet-QR-1550\/swift\/Sources\/SK2ForDotNet\/SK2PurchaseResultType.swift",
       "kind": "IntegerLiteral",
       "offset": 85,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/johanfranzen\/repo\/StoreKit2ForDotNet\/swift\/Sources\/SK2ForDotNet\/SK2PurchaseResultType.swift",
+      "filePath": "\/Users\/johanfranzen\/repo\/StoreKit2ForDotNet-QR-1550\/swift\/Sources\/SK2ForDotNet\/SK2PurchaseResultType.swift",
       "kind": "IntegerLiteral",
       "offset": 112,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/johanfranzen\/repo\/StoreKit2ForDotNet\/swift\/Sources\/SK2ForDotNet\/SK2PurchaseResultType.swift",
+      "filePath": "\/Users\/johanfranzen\/repo\/StoreKit2ForDotNet-QR-1550\/swift\/Sources\/SK2ForDotNet\/SK2PurchaseResultType.swift",
       "kind": "IntegerLiteral",
       "offset": 133,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/johanfranzen\/repo\/StoreKit2ForDotNet\/swift\/Sources\/SK2ForDotNet\/SK2PurchaseResultType.swift",
+      "filePath": "\/Users\/johanfranzen\/repo\/StoreKit2ForDotNet-QR-1550\/swift\/Sources\/SK2ForDotNet\/SK2PurchaseResultType.swift",
       "kind": "IntegerLiteral",
       "offset": 153,
       "length": 1,

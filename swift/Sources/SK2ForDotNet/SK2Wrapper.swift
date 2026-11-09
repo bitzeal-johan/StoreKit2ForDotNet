@@ -14,17 +14,26 @@ import StoreKit
         transactionObserverTask?.cancel()
     }
 
+    // Starts the Transaction.updates loop once; a later call only re-reads the entitlements.
     @objc public func initialize() {
-        transactionObserverTask = Task { [weak self] in
-            for await result in Transaction.updates {
-                guard let self = self else { return }
-                if case .verified(_) = result {
-                    await self.refreshEntitlements()
+        if transactionObserverTask == nil {
+            transactionObserverTask = Task { [weak self] in
+                for await result in Transaction.updates {
+                    guard let self = self else { return }
+                    if case .verified(let transaction) = result {
+                        await self.publishEntitlements()
+                        // An unfinished transaction comes back from Transaction.updates at every start.
+                        await transaction.finish()
+                    }
                 }
             }
         }
+        refreshEntitlements()
+    }
+
+    @objc public func refreshEntitlements() {
         Task { [weak self] in
-            await self?.refreshEntitlements()
+            await self?.publishEntitlements()
         }
     }
 
@@ -74,7 +83,7 @@ import StoreKit
                     case .verified(let transaction):
                         await transaction.finish()
                         let info = Self.transactionInfo(from: transaction)
-                        await self.refreshEntitlements()
+                        await self.publishEntitlements()
                         completion(.success, info, nil)
                     case .unverified(_, let error):
                         completion(.failed, nil, error as NSError)
@@ -126,7 +135,7 @@ import StoreKit
         )
     }
 
-    private func refreshEntitlements() async {
+    private func publishEntitlements() async {
         var entries: [SK2TransactionInfo] = []
         for await result in Transaction.currentEntitlements {
             if case .verified(let transaction) = result {
