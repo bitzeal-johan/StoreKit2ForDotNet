@@ -95,6 +95,9 @@ interface SK2Wrapper
     [Export("initialize")]
     void Initialize();
 
+    [Export("refreshEntitlements")]
+    void RefreshEntitlements();
+
     [Export("fetchProducts:completion:")]
     void FetchProducts(string[] productIds, SK2FetchProductsCompletion completion);
 
